@@ -52,6 +52,7 @@ class Details extends Component {
                 
                 onClick={()=>{
                     value.addToCart(id);
+                    value.openModal(id);
                 }}>
                     
                     {inCart?"inCart":"add to cart"}

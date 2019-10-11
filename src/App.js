@@ -8,6 +8,7 @@ import ProductList from './components/ProductList';
 import Details from './components/Details';
 import Cart from './components/Cart';
 import Default from './components/Default';
+import Module from './components/Module';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         
         <Route  component={Default}/>
       </Switch>
+      <Module/>
     </React.Fragment>
   );
 }

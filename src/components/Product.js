@@ -19,8 +19,9 @@ class Product extends Component {
                         <img src={img} alt="product" className="card-img-top"/>
                         </Link>
                         <button className="cart-btn" disabled={inCart? true:false}
-                        onClick={()=>{value.addToCart(id)}}>
-                        {inCart?(<p className="text-capitalize mb-0" disabled> in Cart</p>):(<i className="fas fa-cart"/>)}
+                        onClick={()=>{value.addToCart(id);
+                        value.openModal(id);}}>
+                        {inCart?(<p className="text-capitalize mb-0" disabled> in Cart</p>):(<i className="fas fa-cart-plus"/>)}
                         </button>
                         </div>
                     )}
